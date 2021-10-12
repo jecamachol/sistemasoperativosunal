@@ -1,0 +1,28 @@
+Un sistema operativo es es un conjunto de programas que controla la ejecucion del software
+y actua como interfaz entre la maquina y el ususario, ademas permite aprovechar los recursos 
+de la maquina y los dispositivos perifericos.
+sin un sistema operativo es imposible podejer ejecutar o usar un software o programa.
+los principales sistemas operativos son Windows, Linux y mac os, por otra parte, existe android, blackberry, ios etc.
+Windows esta a la vanguardia y es el sistema operativo mas usado en la actualidad, por su parte mac os solo se
+puede instalar en laquinas mac.
+la diferencia entre Linux y Windows en precio es muy grande, mientras que por la 
+licencia de Windows hay que pagar 5199 dolares, para instalar Linux solo hay que ir a la pagina y descargarlo 
+o tambien se puede hacer una donacion.
+El objetivo principal de los sistemas operativos es que el usuario se sienta comodo y a gusto manejando 
+su maquina a traves de este. En el pasado los sistemas operativos eran demasiado complejos y solo personas
+con mucha practica y dedicacion podian manejar los computadores. Hoy en dia con solo un click practicamente 
+se puede manejar un sistema operativo.
+las caracteristicas principales de un sistema operativo son la capcidad de actualizacion, es el encargado de administra el hardware,
+relaciona los dispositivos perifericos, organiza datos para el acceso rapido y seguro, maneja las comunicaciones de red.
+Existen diferentes tipos de sistemas operativos para los diferentes dispositivos. Los multitarea son los que 
+sirven para desarrollar diferentes tipos de actividades sin necesidad de parar cualquier otra, los monotarea 
+son los que hacen necesario cerrar la aplicacion o software que este en uso para poder abrir la otra aplicacion,
+exixsten otros sistemas operativos como monousuario y multiusuario por ejemplo un computador servidor con varios 
+computadores cliente.
+las funciones principales de un sistema operativo son la gestion del hardware y la facilidad de trabajo del usuario,
+por ejemplo poder ingresar datos en una hoja de texto, imprimirlos o guardarlos en una unidad e almacenamiento.
+la mayoria de sistemas operativos tienen interfaz grafica por ejemplo las ventanas y el escritorio. 
+
+
+
+
