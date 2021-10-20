@@ -1,0 +1,37 @@
+Historia de los computadores
+anterioremente los computadores tenian que ser compartidas por varias personas por ejemplo una institucion gubernamental
+o una universidad, y era necesario distribuirse el tiempo de uso para el computador, funcionanban con carretes y cintas 
+ademas de tarjetas perforadas, no tenian memoria, asi que tovaba cargar el programa a la maquina con la tarjeta perforada
+de ahi nace lo que es un sistema operativo, como la idea de automatizar un programa y poderlo cargar, que eran sistemas de procesamiento por bloques
+que se podian cargar en las cintas y poder llamar otros programas, luego de esto aparecieron los monitores residentes
+que es lo que hoy en dia se llama como terminal, que se usaban para administrar memoria secundaria y principal y despues de esto aparecio el so DOS.
+
+Que es un sistema operativo:
+primera linea:
+es un software que administra y controla la maquina. por otra parte un procesador solo podia ejectuar una vez un software en cola y esto llevo a un problema
+y para solucionarlo se decidio por cargar varios programas en la memoria y distribuir el tiempo del procesador en todos los distintos programas
+El primer trabajo o fucnion importante que hace un sistema operativo es poder distribuir el tiempo del procesador en los distintos programas que es administrar los recursos de la maquina
+el sistema operativo es el unico que tiene control total de los dispositivos, memoria, cpu, perifericos etc.
+IBM tuvo la idea de crear una computadora personal y decidio crearla y poner libre su arquitectura y contruccion
+esto hizo que los pcs llegaran a todo el mundo y se expandiera de forma muy rapida, 
+Segunda linea:
+Existen muchas configuraciones de maquina y es necesario crear abstracciones que son funciones delegadas al sistema operativo
+y a partir de esto surge la segunda funcion importante que tiene el sistema operativo, que es hacer abstraccion del hardware
+la tercera funcion importante de un sistema operativo es ofrecer una interfaz de supervision y cnontrolar el sistema operativo
+
+Caracteristicas de un sistmea opertativo:
+capacidad de de multitarea y ejecutar de manera concurrente, otra caracteristica de un sistema operativo es ser multiusuario y asignar privilegios
+una tercer caracteristica es la capacidad de administrar maquinas con varios cpus o nucleos de procesador que se divide en multiprocesamiento 
+simetrico y asimetrico.
+para implementar un sistema multitarea se debe aplicar abastraciones en memoria, procesador y perifericos
+multitarea colaborativa: no se necesita soporte de hardware donde todos los programas se portan bien y cumplen con un protocolo
+como devolver a la cpu cuando necesite algo  de un periferico o despues de cierto tiempo o entrar solamente a las zonas de memoria asignadas por el so
+para eejcutar un proceso mas robusto se necesita un soporte de hardware, esto es que el cpu pueda distinguir entre 
+el codigo del so y el codigo de los demas procesos, normalmente se implementa con un sistema de anillos de ejecucion 
+el soporte para el manejo de interrupciones es un mecanismo mediante el cual se puede interrumpir a la cpu generando un salto a la subrutina que se este ejecutando 
+guardando el estado interno de la cpu y ejecutando codigo especificado por el sistema operativo
+una interrupcion se produce por medio de hardware es decir co n un dispositivo que avise a la cpu que existe una novedad
+atraves de lineas de solicitud de interrupcion otra forma en la que se puede interrumpir una instruccion es por una excepcion que es cuando se genera internamente en el cpu 
+por ejemplo dividir por cero en alguna instruccion, otra forma de interrumpir una instruccion del procesador es por medio de un software o del sistema operativo 
+
+
