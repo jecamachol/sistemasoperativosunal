@@ -1,0 +1,46 @@
+Arquitectura de un sistema operativo:
+es la forma en que se dise;a un sistema operativo para que resuelva los problemas que se necesitan
+Sistema operativo monolitico:
+es un so que funciona todo junto en un espacio en memoria se  divide en 3 niveles de abstraccion, en la parte inferior se trabaja con el hardware,
+en la parte superior se trabaja con los procesos de usuario y estos interactuan a traves del sistema operativo,
+el sistema operativo provee todas las llamdas asl sistema, ademas tiene los controladores para que el sistema operativo pueda interactuar con el hardware
+las abstracciones y administradores, por ejemplo el sistema de archivos que no tiene forma fisica, abstracciones de memoria etc.
+un ejemplo de sistema monolitico es linux, las ventajas de la arquitectura monolitica es la eficiencia de la comunicacion del sistema operativo
+las desventajas de la arquitectura monolitica es que hay que ser muy cuidadoso al programar en este tipo de sistema porque puede
+producirse un efecto mariposa este es la sucesion de causas y efectos que puede ocasionar una mala linea de codigo
+para reducir estas desventajas hay que tener mucho orden y convencion de los nombres de las variables,
+y aplicar los esquemas de pruebas de regresion esto evita que cuando alguien dañe la rutina b, esta no dañe la rutina a
+
+Arquitectura microkernel:
+esta arquitectura trabaja con el minimo indispensable, con funcionalidad critica, esto es  que los procesos criticos que 
+se encuentran en el anillo se los delega al anillo 2, protecciones dememoria, planificacion de procesos e hilos, mecanismos de comunicacion entre procesos
+todo lo demas se va a los procesos de usuario que corren en el anillo 2 y como consecuencia de esto, no existe el efecto mariposa, y se vuelve un sistema mucho mas flexible
+las desventajas que tiene la arquitectura microkernel es que es ineficiente.
+los primeros microkernels funcionaban 10 veces mas lento que los sistemas monoliticos y este cuello de botella fue mejorado arreglando el mecanismo IPC
+un ejemplo de estructura microkernel es Windows NT, otro sistema es GNU hurd al que stallman dejo atras para unirse a linux
+Cuando IBM libero el PC necesitaba un sistema operativo
+IBM empezo utilizando el CP/M disk operating system o CP/M DOS despues lo compro y fue IBM DOS
+finalmente microsoft compro DOS y fue MS/DOS
+Dos era un sistema operativo de monitor residente que no tenia multitarea y de ahi se empexo a plantear la idea de mutitarea
+despues aparecio el  i 386 con codigos de  32 bits y mutitarea y simultaneamente microsoft venia desarrollando 
+el Ms Windows en particular MS Windows 2.0 era un sistema multitarea coperativa. coria i286 sin multitarea
+cuando aparecio el i 386 microsoft empezo a parchear  el DOS y el windows para ir utilizando caracteristicas del i386
+y la evolucion de este fue con Windows 3.1 > 3.11 > 95 > 98 >windows ME y paralelamente iban desarrollando Windows NT 3.11 > 4.0
+despues de esto co mo windiows Nt tuvo tanta resistencia, microsoft lanzo el Windows 2000 el cual era una version con todos los permisos abiertos
+que tenia el windows NT, lo cual impulso la proliferacion de malware
+Abstracciones: Memoria secundaria que esta conectada de forma indirecta al procesador a traves del bus de entrada salida
+otro ejemplo de mekoria secundaria es un disco rigido, aeste se accede a traves de un controlador de disco y este controlador esta conectado a traves de un bus de entrada y salida
+especializada (ejemplo sata), otro controlador de disco duro para linux es SCSI. este es un nivel para hablar con dispositivos
+donde las operaciones tienen que ver con leer y escribir direcciones en forma aleatoria y secuencial.
+otra abstraccion es SCSI que se divide en dispositivo de bloque y dispositivo de caracater 
+un dispositivo de bloque tiene las siguientes caracteristicas:
+acceso aleatorio a granularidad gruesa, esto es que puede acceder a bloques de 512 bytes o mas
+otra caracteristica es que tiene capacidad finita y direccionamiento lineal
+un dispositivo de caractaer:
+solamente tiene acceso secuencial 
+permite lectura o escritura o ambas de caracteres.
+En UNIX/LINUX/GNU al acceso a nivel de dispositivo o carcacter se mapea a nombre de archivo especial, estos archivos especiales se guardan en el directorio/dev
+ y ademas se pueden usar las primitivas de archivos (open, read, write, seek, close) para acceder a los dispositivos directamente
+
+
+ 
