@@ -1,1 +1,32 @@
+#Este llamado al sistema lo que hace es devolver la ruta en la cual se esta trabajando el script de python
 
+import os
+a = os.getcwd()
+print (a)
+
+#El llamado al sistema listdir lo que hace es listar todos los archivos y carpetas que hay en la carpeta de origen
+
+b = os.listdir()
+print(b)
+
+# Este comando mkdir lo que hace es crear una carpeta en la ruta especificada
+
+os.mkdir ("C:/Users/Kike/Desktop/python/Dataset")
+
+# este llamado al sistema os.path.exists lo que hace es comprobar si una carpeta existe
+
+c = os.path.exists("archivo carpeta")
+print (c)
+#en este caso la carpeta con el nombre "archivo carpeta" no existe y arroja False
+
+#el llamado al sistema os.patj.join lo que hace es concatenar las rutas de varias carpetas
+import os
+
+d = os.path.join(os.getcwd(),"Carpeta")
+print(d)
+#por ejemplo aqui concateno la carpeta de destino con el nombre de otra carpeta en un solo path
+
+#este llamado al sistema rename lo que hace es renombrar una carpeta 
+import os
+e = os.rename("C:/Users/Kike/Desktop/python/datos","documento")
+print (e)
