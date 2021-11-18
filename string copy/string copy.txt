@@ -1,0 +1,17 @@
+str1 = "esto es una variable"
+
+lista = []
+
+def funcion():
+
+    for i in str1:
+
+        lista.append(i)
+
+        str2 = "".join(lista)
+
+    print(str2)
+
+    print(type(str2))
+
+funcion()
